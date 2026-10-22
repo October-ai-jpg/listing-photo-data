@@ -1,0 +1,405 @@
+{
+  "name": "Professional listing photo benchmarks",
+  "description": "Summary figures from October's measurements of up to 392 professional interior listing photos (September 2026): camera lean of vertical lines, focal length, the brightness profile, near-white share, wall colour, saturation, fine detail, styling faults and delivered size, each with its sample size and method note as published in the study.",
+  "url": "https://www.october-ai.com/data",
+  "source_page": "https://www.october-ai.com/guides/what-makes-listing-photos-look-professional",
+  "creator": "October (october-ai.com)",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Source: October, october-ai.com/data",
+  "date_modified": "2026-10-22",
+  "measured": "2026-09",
+  "spatial_coverage": "Denmark",
+  "changelog": [
+    {
+      "date": "2026-10-22",
+      "change": "First release: the study's summary figures (measured September 2026), each with its sample and method note."
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "description": "A stable id for the figure."
+    },
+    {
+      "name": "marker",
+      "description": "What is measured."
+    },
+    {
+      "name": "statistic",
+      "description": "Which statistic the value is."
+    },
+    {
+      "name": "value",
+      "description": "The figure, as a number."
+    },
+    {
+      "name": "count",
+      "description": "The number of photos behind a share, where the page gives it."
+    },
+    {
+      "name": "unit",
+      "description": "The unit of the value."
+    },
+    {
+      "name": "sample_size",
+      "description": "How many photos the figure is measured on; empty where the page does not say."
+    },
+    {
+      "name": "sample",
+      "description": "The sample in words."
+    },
+    {
+      "name": "method",
+      "description": "How it was measured, as the study page describes it."
+    },
+    {
+      "name": "section",
+      "description": "The section of the study page the figure is published in."
+    },
+    {
+      "name": "as_published",
+      "description": "The figure exactly as the study page prints it."
+    }
+  ],
+  "rows": [
+    {
+      "id": "lean_median",
+      "marker": "Camera lean",
+      "statistic": "median lean of vertical lines",
+      "value": 0,
+      "count": null,
+      "unit": "degrees",
+      "sample_size": 392,
+      "sample": "392 professional interior photos",
+      "method": "Canny edges and a probabilistic Hough transform; the length-weighted median of the signed deviation of near-vertical lines from vertical. Lean below about 0.4° reads as 0.00°.",
+      "section": "Finding 1: the verticals are straight, every time",
+      "as_published": "median lean of the vertical lines was 0.00°"
+    },
+    {
+      "id": "lean_over_1deg",
+      "marker": "Camera lean",
+      "statistic": "share of photos leaning more than 1.0°",
+      "value": 1.79,
+      "count": 7,
+      "unit": "% of photos",
+      "sample_size": 392,
+      "sample": "392 professional interior photos",
+      "method": "Canny edges and a probabilistic Hough transform; the length-weighted median of the signed deviation of near-vertical lines from vertical. Lean below about 0.4° reads as 0.00°.",
+      "section": "Finding 1: the verticals are straight, every time",
+      "as_published": "7 of the 392 (1.79%)"
+    },
+    {
+      "id": "lean_unmeasurable",
+      "marker": "Camera lean",
+      "statistic": "photos with too few architectural lines to measure",
+      "value": 11,
+      "count": 43,
+      "unit": "% of photos",
+      "sample_size": 392,
+      "sample": "392 professional interior photos",
+      "method": "Canny edges and a probabilistic Hough transform; the length-weighted median of the signed deviation of near-vertical lines from vertical. Lean below about 0.4° reads as 0.00°.",
+      "section": "Finding 1: the verticals are straight, every time",
+      "as_published": "43 photos (11%)"
+    },
+    {
+      "id": "focal_length_median",
+      "marker": "Field of view",
+      "statistic": "median focal length",
+      "value": 18,
+      "count": null,
+      "unit": "mm full-frame equivalent",
+      "sample_size": 80,
+      "sample": "80 professional interiors with verifiable EXIF",
+      "method": "Focal length from original EXIF, converted to full-frame equivalent; only interiors matched to the original file.",
+      "section": "Finding 2: wide, but not as wide as the 0.5× lens",
+      "as_published": "median focal length of 18 mm"
+    },
+    {
+      "id": "focal_length_p10",
+      "marker": "Field of view",
+      "statistic": "10th percentile focal length (10% were this wide or wider)",
+      "value": 15,
+      "count": null,
+      "unit": "mm full-frame equivalent",
+      "sample_size": 80,
+      "sample": "80 professional interiors with verifiable EXIF",
+      "method": "Focal length from original EXIF, converted to full-frame equivalent; only interiors matched to the original file.",
+      "section": "Finding 2: wide, but not as wide as the 0.5× lens",
+      "as_published": "10% were 15 mm or wider"
+    },
+    {
+      "id": "focal_length_p90",
+      "marker": "Field of view",
+      "statistic": "90th percentile focal length (10% were longer)",
+      "value": 25,
+      "count": null,
+      "unit": "mm full-frame equivalent",
+      "sample_size": 80,
+      "sample": "80 professional interiors with verifiable EXIF",
+      "method": "Focal length from original EXIF, converted to full-frame equivalent; only interiors matched to the original file.",
+      "section": "Finding 2: wide, but not as wide as the 0.5× lens",
+      "as_published": "10% were longer than 25 mm"
+    },
+    {
+      "id": "focal_length_24mm_or_wider",
+      "marker": "Field of view",
+      "statistic": "share shot at 24 mm or wider",
+      "value": 89,
+      "count": null,
+      "unit": "% of photos",
+      "sample_size": 80,
+      "sample": "80 professional interiors with verifiable EXIF",
+      "method": "Focal length from original EXIF, converted to full-frame equivalent; only interiors matched to the original file.",
+      "section": "Finding 2: wide, but not as wide as the 0.5× lens",
+      "as_published": "89% were shot at 24 mm or wider"
+    },
+    {
+      "id": "lightness_p1",
+      "marker": "Brightness profile",
+      "statistic": "p1 of the professional brightness profile (L* percentile of the frame)",
+      "value": 6.3,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 378,
+      "sample": "378 professional interior photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "6.3"
+    },
+    {
+      "id": "lightness_p5",
+      "marker": "Brightness profile",
+      "statistic": "p5 of the professional brightness profile (L* percentile of the frame)",
+      "value": 22.7,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 378,
+      "sample": "378 professional interior photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "22.7"
+    },
+    {
+      "id": "lightness_p10",
+      "marker": "Brightness profile",
+      "statistic": "p10 of the professional brightness profile (L* percentile of the frame)",
+      "value": 34.5,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 378,
+      "sample": "378 professional interior photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "34.5"
+    },
+    {
+      "id": "lightness_p25",
+      "marker": "Brightness profile",
+      "statistic": "p25 of the professional brightness profile (L* percentile of the frame)",
+      "value": 56.5,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 378,
+      "sample": "378 professional interior photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "56.5"
+    },
+    {
+      "id": "lightness_median",
+      "marker": "Brightness profile",
+      "statistic": "p50 (median) of the professional brightness profile",
+      "value": 71.8,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 378,
+      "sample": "378 professional interior photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "71.8"
+    },
+    {
+      "id": "lightness_p75",
+      "marker": "Brightness profile",
+      "statistic": "p75 of the professional brightness profile (L* percentile of the frame)",
+      "value": 79.6,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 378,
+      "sample": "378 professional interior photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "79.6"
+    },
+    {
+      "id": "lightness_p90",
+      "marker": "Brightness profile",
+      "statistic": "p90 of the professional brightness profile (L* percentile of the frame)",
+      "value": 85.1,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 378,
+      "sample": "378 professional interior photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "85.1"
+    },
+    {
+      "id": "lightness_p99",
+      "marker": "Brightness profile",
+      "statistic": "p99 of the professional brightness profile (L* percentile of the frame)",
+      "value": 94.5,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 378,
+      "sample": "378 professional interior photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "94.5"
+    },
+    {
+      "id": "near_white_85_living_rooms",
+      "marker": "Near-white share",
+      "statistic": "median share of the frame above L* 85",
+      "value": 11.2,
+      "count": null,
+      "unit": "% of frame",
+      "sample_size": 93,
+      "sample": "93 professional living-room photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "a median of 11.2% of the frame sat above L* 85"
+    },
+    {
+      "id": "near_white_90_living_rooms",
+      "marker": "Near-white share",
+      "statistic": "median share of the frame above L* 90",
+      "value": 3.8,
+      "count": null,
+      "unit": "% of frame",
+      "sample_size": 93,
+      "sample": "93 professional living-room photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "3.8% above L* 90"
+    },
+    {
+      "id": "walls_above_frame_median",
+      "marker": "Wall brightness",
+      "statistic": "walls' L* above the frame's median L*",
+      "value": 5.5,
+      "count": null,
+      "unit": "L*",
+      "sample_size": 93,
+      "sample": "93 professional living-room photos",
+      "method": "CIELAB L* (0 black, 100 white) after resizing to 3000 px on the long edge with Lanczos resampling.",
+      "section": "Finding 3: bright is not the same as pale",
+      "as_published": "only 5.5 L* above the frame's median"
+    },
+    {
+      "id": "wall_a_star",
+      "marker": "Wall colour",
+      "statistic": "wall a* (green–red axis)",
+      "value": 0,
+      "count": null,
+      "unit": "CIELAB a*",
+      "sample_size": 200,
+      "sample": "200 professional photos",
+      "method": "Wall pixels in CIELAB.",
+      "section": "Finding 4: neutral walls, restrained colour",
+      "as_published": "a* 0 and b* +3"
+    },
+    {
+      "id": "wall_b_star",
+      "marker": "Wall colour",
+      "statistic": "wall b* (blue–yellow axis); middle 80% between +1 and +6",
+      "value": 3,
+      "count": null,
+      "unit": "CIELAB b*",
+      "sample_size": 200,
+      "sample": "200 professional photos",
+      "method": "Wall pixels in CIELAB.",
+      "section": "Finding 4: neutral walls, restrained colour",
+      "as_published": "between b* +1 and +6"
+    },
+    {
+      "id": "saturation_q1",
+      "marker": "Colour saturation",
+      "statistic": "lower bound of the middle half of photos",
+      "value": 0.03,
+      "count": null,
+      "unit": "HSV saturation (0–1)",
+      "sample_size": 74,
+      "sample": "74 professional interiors",
+      "method": "Per-photo median HSV saturation (0–1), in the 74-photo reference band from 56 properties.",
+      "section": "Finding 4: neutral walls, restrained colour",
+      "as_published": "between 0.03 and 0.09"
+    },
+    {
+      "id": "saturation_q3",
+      "marker": "Colour saturation",
+      "statistic": "upper bound of the middle half of photos",
+      "value": 0.09,
+      "count": null,
+      "unit": "HSV saturation (0–1)",
+      "sample_size": 74,
+      "sample": "74 professional interiors",
+      "method": "Per-photo median HSV saturation (0–1), in the 74-photo reference band from 56 properties.",
+      "section": "Finding 4: neutral walls, restrained colour",
+      "as_published": "between 0.03 and 0.09"
+    },
+    {
+      "id": "detail_median",
+      "marker": "Fine detail",
+      "statistic": "median detail score (sample size not stated on the study page)",
+      "value": 510,
+      "count": null,
+      "unit": "Laplacian variance",
+      "sample_size": null,
+      "sample": "professional interior photos",
+      "method": "Variance of the Laplacian at 3000 px on the long edge.",
+      "section": "Finding 5: the phone is sharp enough",
+      "as_published": "a median of 510 for the professional photos"
+    },
+    {
+      "id": "detail_median_living_rooms",
+      "marker": "Fine detail",
+      "statistic": "median detail score, living rooms (sample size not stated on the study page)",
+      "value": 670,
+      "count": null,
+      "unit": "Laplacian variance",
+      "sample_size": null,
+      "sample": "professional living-room photos",
+      "method": "Variance of the Laplacian at 3000 px on the long edge.",
+      "section": "Finding 5: the phone is sharp enough",
+      "as_published": "670 for professional living rooms"
+    },
+    {
+      "id": "styling_fault",
+      "marker": "Styling",
+      "statistic": "photos where the room was not ready (323 were)",
+      "value": 69,
+      "count": null,
+      "unit": "photos",
+      "sample_size": 392,
+      "sample": "392 professional interior photos",
+      "method": "Each photo labelled for whether the room was ready; faults such as an unmade bed, an open wardrobe full of clothes or toys across the floor.",
+      "section": "Finding 6: one in six professional photos has a styling fault",
+      "as_published": "323 were, 69 were not"
+    },
+    {
+      "id": "delivered_3000px",
+      "marker": "Delivered size",
+      "statistic": "share delivered at 3000 px on the long edge (3000 × 2000, 3:2)",
+      "value": 94,
+      "count": null,
+      "unit": "% of photos",
+      "sample_size": 392,
+      "sample": "392 professional interior photos",
+      "method": "Long edge of the published file.",
+      "section": "The findings at a glance",
+      "as_published": "94% at 3000 px on the long edge"
+    }
+  ]
+}

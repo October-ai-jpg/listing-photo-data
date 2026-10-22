@@ -1,0 +1,41 @@
+# Listing photo data
+
+Open data about real estate listing photos, published by [October](https://www.october-ai.com) under [CC BY 4.0](LICENSE).
+
+| Dataset | Files | Rows | What it holds |
+|---|---|---|---|
+| **MLS photo rules by MLS** | [`mls-photo-rules.csv`](data/mls-photo-rules.csv) · [`mls-photo-rules.json`](data/mls-photo-rules.json) | 8 MLSs | Photo limits, required shots, branding bans, virtual-staging labels, AI rules, original-photo requirements and fines at CRMLS, SDMLS, Bright MLS, Stellar MLS, NWMLS, Metro MLS, MLS Now and Unlock MLS. Every row is read from the MLS's own published rules, FAQ or support page, with the source URL and the date it was checked. |
+| **Professional listing photo benchmarks** | [`listing-photo-benchmarks.json`](data/listing-photo-benchmarks.json) | 26 figures | What professional interior listing photos measure: lean of vertical lines (median 0.00° across 392 photos), focal length (median 18 mm full-frame equivalent), the brightness profile (L* percentiles), near-white share, wall colour, saturation, fine detail, styling faults and delivered size. Each figure has its sample size and method. |
+
+Read them as pages:
+
+- MLS photo rules: <https://www.october-ai.com/guides/mls-photo-rules-by-mls>
+- The study behind the benchmarks: <https://www.october-ai.com/guides/what-makes-listing-photos-look-professional>
+- All open data, with changelog: <https://www.october-ai.com/data>
+
+## Fields
+
+Each JSON file carries its own field list (`fields`), licence, attribution line, date modified and changelog, so it can be used without this README.
+
+**mls-photo-rules:** `mls`, `region`, `rules_cited`, `photo_limit`, `photo_requirements`, `min_size`, `branding_rule`, `virtual_staging_rule`, `ai_alteration_rule`, `originals_rule`, `fines`, `source_url`, `more_source_urls`, `checked`. An empty value means the rule was not stated on the pages we read. It does not mean the MLS has no such rule.
+
+**listing-photo-benchmarks:** `id`, `marker`, `statistic`, `value`, `unit`, `sample_size`, `sample`, `method`, plus `section` and `as_published`, which give the study section and the figure exactly as the page prints it.
+
+## How to cite
+
+> Source: October, october-ai.com/data
+
+For example: *"Across 392 professional interior listing photos, the median lean of vertical lines was 0.00° (October, october-ai.com/data)."*
+
+## Caveats
+
+- MLS rules change. Check the `checked` date, and confirm with the MLS before you rely on a row for a listing. This is not legal advice.
+- The benchmark reference set is 392 professional interior photos from listings by Danish real estate brokerages, measured in September 2026. As a check, 120 photos from US agent listings had the same centre on all twelve markers, with a wider spread. Sample sizes differ per figure; each figure states its own sample and method.
+
+## Updates
+
+These files are exported from the same records that render the pages on october-ai.com, so the repo and the site always say the same thing. Corrections and new MLSs are welcome: open an issue with the MLS's own page as the source.
+
+---
+
+October turns a guided iPhone walk into professional listing photos and a walkthrough video, the same day. See <https://www.october-ai.com>.

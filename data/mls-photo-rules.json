@@ -1,0 +1,219 @@
+{
+  "name": "MLS photo rules by MLS",
+  "description": "Photo limits, required shots, branding bans, virtual staging labels, AI rules, original-photo requirements and fines at eight US multiple listing services (CRMLS, SDMLS, Bright MLS, Stellar MLS, NWMLS, Metro MLS, MLS Now and Unlock MLS), each row read from the MLS's own published rules, FAQ or support pages, with the source URL and the date it was checked.",
+  "url": "https://www.october-ai.com/data",
+  "source_page": "https://www.october-ai.com/guides/mls-photo-rules-by-mls",
+  "creator": "October (october-ai.com)",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Source: October, october-ai.com/data",
+  "date_modified": "2026-10-22",
+  "spatial_coverage": "United States",
+  "changelog": [
+    {
+      "date": "2026-10-22",
+      "change": "First release: 8 MLSs, every row checked against the MLS's own pages on 22 October 2026."
+    }
+  ],
+  "fields": [
+    {
+      "name": "mls",
+      "description": "The MLS's name as it uses it."
+    },
+    {
+      "name": "region",
+      "description": "Where the MLS operates."
+    },
+    {
+      "name": "rules_cited",
+      "description": "The rule, article or document the row is read from."
+    },
+    {
+      "name": "photo_limit",
+      "description": "Most photos allowed per listing, as a number; empty if not stated on the pages we read."
+    },
+    {
+      "name": "photo_requirements",
+      "description": "Photo count, required shots and upload deadlines, in words."
+    },
+    {
+      "name": "min_size",
+      "description": "Minimum or recommended photo size; empty if not stated on the pages we read."
+    },
+    {
+      "name": "branding_rule",
+      "description": "Logos, contact details, text, signs and people on photos."
+    },
+    {
+      "name": "virtual_staging_rule",
+      "description": "What an altered or virtually staged photo must be labeled, and where."
+    },
+    {
+      "name": "ai_alteration_rule",
+      "description": "AI-specific wording; empty where none was recorded (the altered-photo rule then applies)."
+    },
+    {
+      "name": "originals_rule",
+      "description": "Whether the unaltered original must be uploaded too, and where."
+    },
+    {
+      "name": "fines",
+      "description": "What happens when a photo breaks the rules, with published amounts."
+    },
+    {
+      "name": "source_url",
+      "description": "The MLS's own page the row is mainly read from."
+    },
+    {
+      "name": "more_source_urls",
+      "description": "Other pages the row draws on (in the CSV, separated by spaces)."
+    },
+    {
+      "name": "checked",
+      "description": "The day the row was last checked against its sources (YYYY-MM-DD)."
+    }
+  ],
+  "rows": [
+    {
+      "mls": "CRMLS",
+      "region": "California",
+      "rules_cited": "Rule 11.5.2",
+      "photo_limit": 75,
+      "photo_requirements": "Up to 75 images per listing. Photos that don't accurately depict the property, such as staging or HOA amenities, must be captioned",
+      "min_size": null,
+      "branding_rule": "Not addressed on the pages we read",
+      "virtual_staging_rule": "\"Photo Modified,\" \"Virtually Staged,\" \"Digitally Altered,\" \"AI Altered\" or similar, in the photo description field. AI-altered images count. No watermark needed",
+      "ai_alteration_rule": "AI-altered images are digitally altered images and take the same label; AI images that change fixed features, the landscaping or the view are banned",
+      "originals_rule": "Uploaded immediately before or after the altered photo",
+      "fines": "A warning, then a $250 fine if not corrected in time",
+      "source_url": "https://kb.crmls.org/knowledgebase/digitally-altered-images-faqs/",
+      "more_source_urls": [
+        "https://kb.crmls.org/knowledgebase/for-photographers-only-how-to-input-photos-onto-crmls-matrix-listings/"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "SDMLS",
+      "region": "San Diego, California",
+      "rules_cited": "Rule 11.5.1",
+      "photo_limit": 75,
+      "photo_requirements": "Up to 75 photos. At least one front exterior (need not be the primary), within 72 hours of entry",
+      "min_size": null,
+      "branding_rule": "No For Sale or yard signs, people, pets, text, QR codes, branding or advertising. Photos only of the property, HOA amenities or views from it",
+      "virtual_staging_rule": "\"Digitally Altered\" (or \"Virtually Staged\") in the photo remarks, plus the original's URL on the altered image. AI counts",
+      "ai_alteration_rule": "AI-generated or AI-enhanced images, including AI virtual staging, must be disclosed with the original",
+      "originals_rule": "Placed adjacent to the altered photo in the sequence. Labeling alone is not sufficient",
+      "fines": "MLS compliance action under SDMLS rules; no amount published",
+      "source_url": "https://support.sdmls.com/support/solutions/articles/150000199547-rules-listing-photo-compliance",
+      "more_source_urls": [
+        "https://sdmls.com/ab-723-digitally-altered-images-faq/",
+        "https://support.sdmls.com/support/solutions/articles/150000215744-ab-723-made-simple-new-rules-for-real-estate-photos"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "Bright MLS",
+      "region": "Mid-Atlantic",
+      "rules_cited": null,
+      "photo_limit": null,
+      "photo_requirements": "At least one photo at entry, the rest within 72 hours; waived for Coming Soon or a seller's written instruction. One \"curbside\" view required",
+      "min_size": "1024 × 768 px or larger, recommended (HomeJab's figure; Bright's own pages give none)",
+      "branding_rule": "No promotional text, brokerage signs, logos, overlaid contact details or identifiable people, \"whether they are real, animated, or computer-generated.\" The MLS watermark may not be removed",
+      "virtual_staging_rule": "Virtual staging (including generative AI) allowed if disclosed in BOTH the Private and Public remarks fields",
+      "ai_alteration_rule": "Generative AI counts as virtual staging: allowed if it reflects a true picture and is disclosed in both the Private and Public remarks",
+      "originals_rule": "Not required on the page we read",
+      "fines": "Bright \"reserves the right to immediately remove any image\" that doesn't comply; no fine published",
+      "source_url": "https://support.brightmls.com/s/article/Virtual-Staging",
+      "more_source_urls": [
+        "https://support.brightmls.com/s/article/Bright-s-Photo-Requirements",
+        "https://www.homejab.com/mls-photo-size/"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "Stellar MLS",
+      "region": "Florida",
+      "rules_cited": "Articles 04.04 and 04.05",
+      "photo_limit": null,
+      "photo_requirements": "Front exterior in the 1st photo slot (2nd if the 1st is an aerial or water view); a pool is not a water view; no collage in slot 1. Count not stated on the pages we read",
+      "min_size": null,
+      "branding_rule": "No logos, agent photos, contact details, branding, text or graphics (except the Stellar watermark); no people, including in costume; no broker or builder signage in the front exterior",
+      "virtual_staging_rule": "\"Virtually staged\" in the photo description, the virtually staged field checked, and the public remarks must begin \"One or more photo(s) was virtually staged.\" No staged exteriors beyond unattached furniture; no distorting room size with small furniture",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required by Article 04.04",
+      "fines": "Staged photos removed plus an automatic fine: $100, then $250, $500 and $1,000 within two years; a 4th offense is a hearing. Text or graphics on photos: $100 on the same ladder",
+      "source_url": "https://rules.stellarmls.com/download/pdf",
+      "more_source_urls": [
+        "https://www.stellarmls.com/photorules",
+        "https://www.stellarmls.com/resources/rules-regulations/fines-and-violations-faqs"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "NWMLS",
+      "region": "Washington",
+      "rules_cited": null,
+      "photo_limit": 40,
+      "photo_requirements": "Aim for 20 to 30; the maximum is 40. Must-have shots: exterior, kitchen, living room, primary bedroom, main bathroom",
+      "min_size": null,
+      "branding_rule": "No contact info, logos or watermarks; no superimposed graphics or text; no QR codes; no people or pets, including a reflection of the photographer",
+      "virtual_staging_rule": "\"Do not manipulate images in a way that misrepresents what is for sale\": no removing power lines, adding a lawn or driveway, or removing defects. The virtual staging rule is in the full photo policy, which sits behind the member login",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not published on a reachable page",
+      "fines": "Not published on a reachable page",
+      "source_url": "https://www.nwmls.com/real-estate-photography-101/",
+      "more_source_urls": [],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "Metro MLS",
+      "region": "Wisconsin",
+      "rules_cited": "from Sept. 1, 2026",
+      "photo_limit": null,
+      "photo_requirements": "Not addressed. The main photo must be an unaltered original",
+      "min_size": null,
+      "branding_rule": "Only the Flexmls watermark feature may be used on altered photos",
+      "virtual_staging_rule": "Flexmls watermark on every altered photo and \"Photos are Digitally Altered\" in the public remarks. Decluttering, removing a yard sign, a realistic sky and a fire in a working fireplace need no watermark",
+      "ai_alteration_rule": null,
+      "originals_rule": "Uploaded immediately before its altered version",
+      "fines": "$10 per altered photo without the watermark; $10 a day for an altered main photo until replaced",
+      "source_url": "https://metromls.com/new-photo-upload-requirements-in-flexmls-original-altered-watermark/",
+      "more_source_urls": [],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "MLS Now",
+      "region": "Ohio",
+      "rules_cited": "Sections 3.5 to 3.7 (rules document dated July 2023)",
+      "photo_limit": null,
+      "photo_requirements": "Front photo within 48 hours or 2 business days of entry; the primary photo must be the front view",
+      "min_size": null,
+      "branding_rule": "No people, no words on any photo, no signs, no agent or contact information, no branding",
+      "virtual_staging_rule": "Interior only, never for to-be-built or under-construction homes; disclosed in the photo description field. No permanent fixtures changed, no views the owner doesn't control (its example: a view of Lake Erie), no removing holes, wiring or damaged flooring",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required by the 2023 rules",
+      "fines": "$100 if the photo is late. Staged photos that break the rules are removed, with fines for repeat offenders. The QA department has used AI (restb.ai) to scan photos since 2023",
+      "source_url": "https://mlsnow.com/wp-content/uploads/2025/12/What-to-Know-Photos.pdf",
+      "more_source_urls": [],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "Unlock MLS",
+      "region": "Austin, Texas",
+      "rules_cited": "Rule 2.15 (Sept. 2026 rulebook)",
+      "photo_limit": null,
+      "photo_requirements": "At least one image within 7 days of the list date; at least one of the front of the dwelling; images once submitted may not be removed",
+      "min_size": null,
+      "branding_rule": "No names, phone numbers, emails or web addresses embedded, overlaid or stamped, except an incidental yard sign; Unlock may reject images with text, advertising or people",
+      "virtual_staging_rule": "No label wording specified. \"Images with virtual staging … must include a non-virtually staged image of the same view\"",
+      "ai_alteration_rule": null,
+      "originals_rule": "A non-virtually staged image of the same view, in the listing",
+      "fines": "A Category 1 (correctable) violation: courtesy notice with 1 business day to fix, up to three a year, then a warning, then escalating penalties starting with a required workshop ($100 if not completed in 45 days)",
+      "source_url": "https://assets.unlockmls.com/pu0snv8rn9fa/4dJXDdzn96kFPLrOeiG1Za/35469d39dfaf3da65ec62b50f3ee29ba/Unlock_MLS_Rules_and_Regulations_Final_Sept_2026_1.pdf",
+      "more_source_urls": [
+        "https://assets.unlockmls.com/pu0snv8rn9fa/4jMqEiJGQj6yv0BSjcyPlq/e7020e28f643e1acc2c4e39a0b0ca272/MLS_Rules_Appendix_C_December_2025.pdf"
+      ],
+      "checked": "2026-10-22"
+    }
+  ]
+}
