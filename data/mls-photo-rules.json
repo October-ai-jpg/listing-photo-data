@@ -1,6 +1,6 @@
 {
   "name": "MLS photo rules by MLS",
-  "description": "Photo limits, required shots, branding bans, virtual staging labels, AI rules, original-photo requirements and fines at eight US multiple listing services (CRMLS, SDMLS, Bright MLS, Stellar MLS, NWMLS, Metro MLS, MLS Now and Unlock MLS), each row read from the MLS's own published rules, FAQ or support pages, with the source URL and the date it was checked.",
+  "description": "Photo limits, required shots, branding bans, virtual staging labels, AI rules, original-photo requirements and fines at 22 US multiple listing services (CRMLS, SDMLS, Bright MLS, Stellar MLS, NWMLS, Metro MLS, MLS Now, Unlock MLS, ARMLS, MLSListings, SFARMLS, RMLS, REcolorado, HAR MLS, MRED, NorthstarMLS, Canopy MLS, Doorify MLS, BeachesMLS, Southeast Florida MLS, OneKey MLS and MLS PIN), each row read from the MLS's own published rules, FAQ or support pages, with the source URL and the date it was checked.",
   "url": "https://www.october-ai.com/data",
   "source_page": "https://www.october-ai.com/guides/mls-photo-rules-by-mls",
   "creator": "October (october-ai.com)",
@@ -13,6 +13,10 @@
     {
       "date": "2026-10-22",
       "change": "First release: 8 MLSs, every row checked against the MLS's own pages on 22 October 2026."
+    },
+    {
+      "date": "2026-10-22",
+      "change": "Expanded to 22 MLSs: added ARMLS, MLSListings, SFARMLS, RMLS, REcolorado, HAR MLS, MRED, NorthstarMLS, Canopy MLS, Doorify MLS, BeachesMLS, Southeast Florida MLS, OneKey MLS and MLS PIN, each read from the MLS's own rules, FAQ or help pages on 22 October 2026. Corrected Unlock MLS (40-photo cap and 2048 × 1536 minimum from its photo help article), Metro MLS (the $10 sanction applies \"if removed\") and CRMLS (AI wording narrowed; rule text source added)."
     }
   ],
   "fields": [
@@ -83,12 +87,13 @@
       "min_size": null,
       "branding_rule": "Not addressed on the pages we read",
       "virtual_staging_rule": "\"Photo Modified,\" \"Virtually Staged,\" \"Digitally Altered,\" \"AI Altered\" or similar, in the photo description field. AI-altered images count. No watermark needed",
-      "ai_alteration_rule": "AI-altered images are digitally altered images and take the same label; AI images that change fixed features, the landscaping or the view are banned",
+      "ai_alteration_rule": "AI-altered images are digitally altered images and take the same label; AI-generated landscaping images are not permitted, and no altered image may change fixed features or the view through windows",
       "originals_rule": "Uploaded immediately before or after the altered photo",
       "fines": "A warning, then a $250 fine if not corrected in time",
       "source_url": "https://kb.crmls.org/knowledgebase/digitally-altered-images-faqs/",
       "more_source_urls": [
-        "https://kb.crmls.org/knowledgebase/for-photographers-only-how-to-input-photos-onto-crmls-matrix-listings/"
+        "https://kb.crmls.org/knowledgebase/for-photographers-only-how-to-input-photos-onto-crmls-matrix-listings/",
+        "https://go.crmls.org/wp-content/uploads/2026/02/2026_Digitally_Altered_Images_FAQs_v1.pdf"
       ],
       "checked": "2026-10-22"
     },
@@ -176,7 +181,7 @@
       "virtual_staging_rule": "Flexmls watermark on every altered photo and \"Photos are Digitally Altered\" in the public remarks. Decluttering, removing a yard sign, a realistic sky and a fire in a working fireplace need no watermark",
       "ai_alteration_rule": null,
       "originals_rule": "Uploaded immediately before its altered version",
-      "fines": "$10 per altered photo without the watermark; $10 a day for an altered main photo until replaced",
+      "fines": "A $10 sanction for an altered photo without the watermark \"if removed\"; $10 a day for an altered main photo until replaced",
       "source_url": "https://metromls.com/new-photo-upload-requirements-in-flexmls-original-altered-watermark/",
       "more_source_urls": [],
       "checked": "2026-10-22"
@@ -201,9 +206,9 @@
       "mls": "Unlock MLS",
       "region": "Austin, Texas",
       "rules_cited": "Rule 2.15 (Sept. 2026 rulebook)",
-      "photo_limit": null,
-      "photo_requirements": "At least one image within 7 days of the list date; at least one of the front of the dwelling; images once submitted may not be removed",
-      "min_size": null,
+      "photo_limit": 40,
+      "photo_requirements": "Up to 40 photos. At least one image within 7 days of the list date; at least one of the front of the dwelling; images once submitted may not be removed",
+      "min_size": "2048 × 1536 px minimum \"for the best quality\"; 4097 × 4095 or 7735 × 2169 px maximum",
       "branding_rule": "No names, phone numbers, emails or web addresses embedded, overlaid or stamped, except an incidental yard sign; Unlock may reject images with text, advertising or people",
       "virtual_staging_rule": "No label wording specified. \"Images with virtual staging … must include a non-virtually staged image of the same view\"",
       "ai_alteration_rule": null,
@@ -211,7 +216,283 @@
       "fines": "A Category 1 (correctable) violation: courtesy notice with 1 business day to fix, up to three a year, then a warning, then escalating penalties starting with a required workshop ($100 if not completed in 45 days)",
       "source_url": "https://assets.unlockmls.com/pu0snv8rn9fa/4dJXDdzn96kFPLrOeiG1Za/35469d39dfaf3da65ec62b50f3ee29ba/Unlock_MLS_Rules_and_Regulations_Final_Sept_2026_1.pdf",
       "more_source_urls": [
-        "https://assets.unlockmls.com/pu0snv8rn9fa/4jMqEiJGQj6yv0BSjcyPlq/e7020e28f643e1acc2c4e39a0b0ca272/MLS_Rules_Appendix_C_December_2025.pdf"
+        "https://assets.unlockmls.com/pu0snv8rn9fa/4jMqEiJGQj6yv0BSjcyPlq/e7020e28f643e1acc2c4e39a0b0ca272/MLS_Rules_Appendix_C_December_2025.pdf",
+        "https://support.unlockmls.com/hc/en-us/articles/48693110642963-How-to-Input-and-Update-Photos-in-Unlock-MLS"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "ARMLS",
+      "region": "Arizona",
+      "rules_cited": "Rules 8.23 and 8.24 (rules updated May 28, 2026)",
+      "photo_limit": null,
+      "photo_requirements": "One front-exterior street-view photo within 4 days of going active (not in Coming Soon), kept for the listing's whole life. Flexmls lists photos per listing as \"Unlimited\"; max file 15 MB or 2000 × 3000",
+      "min_size": null,
+      "branding_rule": "No agent or broker identity, contact information or branding in media or its descriptions; no people unless in the background; no text, images or watermarks except those ARMLS provides. A For Sale sign must be \"completely obscured\"",
+      "virtual_staging_rule": "Allowed with the Flexmls \"Digitally Altered\" watermark on the photo (the old ARMLS \"Virtually Staged\" watermark is no longer approved). Decluttering, removing valuables and adding a fire count as altered; brightness, contrast, color, cropping, sharpening, a recolored sky and a blurred yard sign do not",
+      "ai_alteration_rule": "A photo is Digitally Altered when \"software or AI is used to add, remove, or significantly change image content\": watermark plus the original",
+      "originals_rule": "Uploaded directly before or after the watermarked, altered version",
+      "fines": "$200 per Digitally Altered violation, enforced from December 2026 (no fines June to November 2026); the first violation each calendar year is a warning. Late front photo $50; copied media $500. ARMLS may remove media immediately",
+      "source_url": "https://armls.com/digitally-altered-media",
+      "more_source_urls": [
+        "https://armls.com/docs/armls-rules-regulations.pdf",
+        "https://armls.com/docs/armls-penalty-policy.pdf",
+        "https://armls.com/all-about-armls-photo-rules",
+        "https://armls.com/how-many-searches-can-i-save-flexmls-by-the-numbers"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "MLSListings",
+      "region": "Bay Area, California",
+      "rules_cited": "Rule 7.11.2 (amended Dec. 2025 for AB 723)",
+      "photo_limit": null,
+      "photo_requirements": "A property photo within 1 day after entry; a photo of the front of the building for existing buildings; no text-only images. Count not stated on the pages we read",
+      "min_size": "No pixel minimum; 10 MB per photo, resized to 1440 × 1080; 3000 to 4000 px wide suggested",
+      "branding_rule": "Text or overlays only to describe the property (\"boundaries, pointers or physical descriptions\"); no branding of photos or tours, no photos showing \"for sale\" signs, no agent contact details; \"MLSListings does not allow links of any kind from the photos,\" so no QR codes",
+      "virtual_staging_rule": "\"Any enhancements or modifications to images must be disclosed in the public remarks, e.g. color enhancement or virtual staging,\" and the altered image itself marked \"altered,\" \"digitally altered,\" \"AI altered\" or a similar term",
+      "ai_alteration_rule": "\"AI altered\" is one of the accepted labels; AI enhancements that show items or conditions that don't exist at the property count as digitally altered",
+      "originals_rule": "\"Submit the original, unaltered version of the digitally altered image\"",
+      "fines": "$100, then $200 and $400 for failing the photo requirements or putting contact details on photos; 2 calendar days to correct, then uncured violations double up to the NAR limit",
+      "source_url": "https://support.mlslistings.com/s/article/AB723---Altered-Images-Overview",
+      "more_source_urls": [
+        "https://support.mlslistings.com/s/article/Rules-Regs-Appendix-A-B-C",
+        "https://support.mlslistings.com/s/article/Rules-Regs-11-Ownership-Of-Multiple-Listing-Service-Compilations-And-Copyrights-Data-Rights-and-Responsibilities-Of-The-Service",
+        "https://support.mlslistings.com/s/article/New-Photo-Layout-Management-and-Hide-Photos-Post-Sale-Feature-Listing-Management"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "SFARMLS",
+      "region": "San Francisco, California",
+      "rules_cited": "Rules 7.25 and 8.4 (June 2026) and AB 723 help articles",
+      "photo_limit": null,
+      "photo_requirements": "Count not stated on the pages we read. The first photo must always stay public; photos may not be removed so the listing \"no longer reasonably depicts the property as it was marketed\"",
+      "min_size": null,
+      "branding_rule": "No agent or brokerage branding, direct contact information or website URLs in public remarks, open house information, photographs or floor plans",
+      "virtual_staging_rule": "Virtual staging is digitally altered: caption the original and the altered photo, and if the image isn't already watermarked, apply the MLS \"digitally altered\" watermark at upload. Lighting, cropping, sharpening and \"decluttering/removal of unattached items\" need no disclosure",
+      "ai_alteration_rule": "\"Use virtual staging or AI images showing things that don't exist\" is on its list of edits that need disclosure",
+      "originals_rule": "Upload both the original and the digitally altered image, ideally the original followed by the altered one, captioned as which is which",
+      "fines": "None published for altered images. Deleting photos: Fine Level B, $250 per photo deleted (Rule 8.4, from June 1, 2026)",
+      "source_url": "https://sfar.freshdesk.com/support/solutions/articles/69000875926-digitally-altered-images-guide",
+      "more_source_urls": [
+        "https://sfar.freshdesk.com/support/solutions/articles/69000874999-digitally-altered-images-ab-723-",
+        "https://sfar.freshdesk.com/support/solutions/articles/69000831188-agent-contact-information-within-a-listing",
+        "https://sfar.freshdesk.com/support/solutions/articles/69000878618-protection-of-listing-content-rule-7-25-",
+        "https://sfar.freshdesk.com/support/solutions/articles/69000877180-before-you-delete-photos-know-the-costs-and-how-to-avoid-them-"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "RMLS",
+      "region": "Oregon and SW Washington",
+      "rules_cited": "Rules 3.8 and 3.25 (rules v.2026-06-11)",
+      "photo_limit": null,
+      "photo_requirements": "One exterior photo of the building as photo number 1 (land photo for bare land); new construction may use the floor plan or elevation until complete. Count not stated on the pages we read",
+      "min_size": null,
+      "branding_rule": "No people, copyrighted material, promotional information, names of private businesses or contact information; no branding of photos or virtual tours. Incidental yard signs allowed; lot lines, road names and arrows allowed if not misleading",
+      "virtual_staging_rule": "Disclosed on the photo itself with the \"Virtually Staged\" watermark; no \"alterations that misrepresent the property.\" A similar home shown for new construction needs a \"Sample Image\" watermark",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required by the rules we read",
+      "fines": "Promotion on photos or in tours: $100, then $250, then $500 per offense. No fine listed for staging without the watermark; general fines up to $15,000",
+      "source_url": "https://www.rmlsweb.com/v2/public2/loadfile.asp?id=13434",
+      "more_source_urls": [
+        "https://rmlscentral.com/2023/02/22/rules-roundup-photograph-rules-changes-jan-2023/",
+        "https://rmlscentral.com/resources/"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "REcolorado",
+      "region": "Denver, Colorado",
+      "rules_cited": "Section 1.20 (MLS Policy revised November 2025)",
+      "photo_limit": 50,
+      "photo_requirements": "Up to 50 photos (photo FAQ, Oct. 2023). At least one photo within three business days unless the seller directs otherwise; the primary photo must be of the listed property",
+      "min_size": null,
+      "branding_rule": "No phone numbers, email or web addresses, company or personal names, financial information, promotions, branding, ads or logos. Subtle descriptive text allowed; borders, watermarks and yard signs only as \"non-predominant features\"",
+      "virtual_staging_rule": "\"Virtual staging is allowed\" and \"is not considered manipulating photos\"; no disclosure label required on the pages we read. Banned: any photo where \"the true appearance of a property has been manipulated,\" such as removing a permanent object, changing the landscape or adding improvements that don't exist",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required on the pages we read",
+      "fines": "No photo-specific amount; violations not corrected within three business days draw progressive fines that \"range from $25 to $15,000 dollars depending on the severity\"",
+      "source_url": "https://cdn.recolorado.com/files/MLS-Policy.pdf",
+      "more_source_urls": [
+        "https://recolorado.com/faqs-photos/"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "HAR MLS",
+      "region": "Houston, Texas",
+      "rules_cited": "Rules 1.25.1 and 1.25.5 (rules dated 12/1/2023)",
+      "photo_limit": null,
+      "photo_requirements": "At least six unique images within 10 days of the list date for homes, townhouse-condos, high-rises, multi-family and rentals (three for to-be-built), unless the seller signs otherwise; one actual photo for lots and acreage. Images must show the property \"as-is\"",
+      "min_size": null,
+      "branding_rule": "No legible names, phone numbers, email or web addresses in images or photo descriptions, \"including the use of embedded, overlaid, or digitally stamped information\"; no financing or bonus remarks in the photo description",
+      "virtual_staging_rule": "Limited to adding \"furnishings and wall décor\" that don't convey, stated in the Photo Description. An image altered to change real property characteristics needs a watermark across the bottom reading \"Image does not represent actual property as is\" (at least 1024 × 89 px, Arial) and may not be the primary image",
+      "ai_alteration_rule": null,
+      "originals_rule": "For an image altered to change real property, an unaltered image of the same view, placed adjacent to it",
+      "fines": "Contact info on photos: $250 per violation; too few photos: $100 each; other Rule 1.25 breaches $250, then $500. Fines double after the 2nd fined repeat within 12 months. HAR may remove inaccurate photos",
+      "source_url": "https://web.har.com/mls/MLSRules.pdf",
+      "more_source_urls": [
+        "https://web.har.com/mls/TopMLSRulesRemember.pdf"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "MRED",
+      "region": "Chicago area, Illinois",
+      "rules_cited": "Sections 6.1.1 and 6.2 (rules revised May 14, 2026)",
+      "photo_limit": null,
+      "photo_requirements": "An exterior primary photo within 7 days of entry; with none after 10 days the listing goes to HOLD. Photos can't be removed except for a change of season, improvements or a better photo of the same view. Count not stated on the pages we read",
+      "min_size": null,
+      "branding_rule": "No names, contact information, URLs, QR codes, REALTOR® or office logos or branding, for sale signs, persons, collages or audio, video or text commentary. Captions follow the same rules as the remarks",
+      "virtual_staging_rule": "Allowed for personal property that doesn't convey (furniture, mirrors, artwork, plants), including removing existing furniture; disclosed \"in the specified field\" (Are Any Property Photos Virtually Staged?). No adding views the owner doesn't control (its example: the Chicago Bean) or removing power lines, water towers or highways. To-Be-Built and Under Construction listings may stage everything",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required by the rules we read",
+      "fines": "No staging-specific fine. Photo content violations after notice: $250, $300, $500, then $1,000. Removing photos: $250. No primary photo: $250 rising to $1,000. Others' photos: $250 per submission",
+      "source_url": "https://www.mredllc.com/comms/resources/MREDRulesAndRegulations.pdf",
+      "more_source_urls": [
+        "https://www.mredllc.com/comms/resources/MREDResidentialGlossary.pdf"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "NorthstarMLS",
+      "region": "Minnesota",
+      "rules_cited": "Section 4.12 (Rules effective July 1, 2026) and a best-practice PDF",
+      "photo_limit": null,
+      "photo_requirements": "A photo within two business days of entry (not Lots and Land or Under Construction). No people or pets; wildlife and farm animals allowed. Count not stated on the pages we read",
+      "min_size": null,
+      "branding_rule": "No broker, agent or builder signs, banners or promotional material. Text on a photo only if it isn't promotional and has no branding or contact information; the caption is preferred",
+      "virtual_staging_rule": "Allowed \"as long as the photo alterations affect only the personal property (furniture) and not the real estate.\" Its best-practice PDF asks for disclosure in the caption, filename or on the photo; its July 2026 \"proposed guidelines\" were published as best practice, not added to the Rules",
+      "ai_alteration_rule": "Best practice, not a rule: AI-generated or AI-enhanced photos are disclosed like staging and paired with an unaltered \"before\" image; AI images of permanent features or improvements that don't exist are \"prohibited\" in the guidance",
+      "originals_rule": "Not required by the Rules. The best-practice PDF asks for an unaltered \"Before\" image for each staged or AI-enhanced room",
+      "fines": "Late photo: a $25 administrative fee, then $100, escalating until the photo is added or service is suspended. Another broker's or photographer's photo without permission: $100 for a first offense. No staging or AI fine published",
+      "source_url": "https://resources.northstarmls.com/hc/en-us/articles/54550054122267-MLS-Photo-Rules",
+      "more_source_urls": [
+        "https://resources.northstarmls.com/hc/en-us/articles/54550216736155-Virtual-Staging-Best-Practice",
+        "https://northstarmls.com/wp-content/uploads/2026/06/Virtual-Stage-Best-Practice.pdf",
+        "https://northstarmls.com/insights/guidelines-for-virtual-staging-and-ai-enhanced-listing-photos/",
+        "https://resources.northstarmls.com/hc/en-us/articles/54550204682907-2026-NorthstarMLS-Rules"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "Canopy MLS",
+      "region": "Charlotte, North Carolina",
+      "rules_cited": "Sections 1.7, 1.18 and 1.18.1",
+      "photo_limit": 48,
+      "photo_requirements": "Up to 48 photos in Matrix. At least one image once Active, and one an exterior view of the structure (a plat or map for land). A photo that isn't of the actual listing needs \"example photo\" across it; a caption is not enough",
+      "min_size": "2048 × 1536 px recommended minimum; 3000 × 3000 px and 6 MB maximum, JPG only",
+      "branding_rule": "No phone numbers, emails, websites, company or personal names, for-sale signs, logos, slogans or superimposed graphics. Embedded text, personal advertising and people may be rejected or removed. Canopy watermarks every photo",
+      "virtual_staging_rule": "A clear disclosure directly ON the image or within the virtual tour; disclosure only in captions, remarks or supplemental text is \"NOT acceptable.\" Furniture, décor and paint color may change if no structural change is implied; no impossible views, changed room dimensions, added pools, fireplaces or rooms, or removed power lines, highways or flaws",
+      "ai_alteration_rule": "AI-enhanced images follow the virtual staging rule: on-image disclosure plus the original. Its example of a banned edit: a view of the Charlotte skyline or stadium that isn't possible from the property",
+      "originals_rule": "A nonstaged original \"immediately before or after\" the AI-enhanced or virtually staged photo, or easily accessible alongside a virtual tour",
+      "fines": "Branding in photos: email notice, then $100 if not corrected within two business days. No staging-specific fine on the pages we read",
+      "source_url": "https://support.canopymls.com/kb/article/104-digital-virtually-staged-and-ai-enhanced-images-and-unauthorized-use-of-listing-content/",
+      "more_source_urls": [
+        "https://support.canopymls.com/kb/article/125-matrix-listing-images-instructions-and-common-questions/",
+        "https://support.canopymls.com/kb/article/86-branding/",
+        "https://support.canopymls.com/kb/article/44-photo-disclaimer-watermark/"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "Doorify MLS",
+      "region": "Raleigh-Durham, North Carolina",
+      "rules_cited": "Section 1.2 (rules revised May 26, 2026)",
+      "photo_limit": 100,
+      "photo_requirements": "Up to 100 photos. At least 3 for resale and commercial improved, 1 for new construction and rentals, within 7 days of entry, each \"an actual representation of the property\"; the minimum applies in every status, including Closed and Expired",
+      "min_size": null,
+      "branding_rule": "No contact information, marketing or promotional messages, advertisements, visible people or branded QR codes; virtual tours must be unbranded",
+      "virtual_staging_rule": "\"We do not currently require disclosure of Digitally Enhanced or Virtually Staged photos,\" but they \"must not misrepresent the true state of the property\": no changing wall colors or flooring, removing fixtures like fire hydrants, or enhancing landscaping beyond its current condition",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required on the pages we read",
+      "fines": "Photo violations are Category I: no fine if fixed within 2 business days, then $100, plus $100 every 2 business days, up to $500",
+      "source_url": "https://support.doorifymls.com/hc/en-us/articles/33997561324819-Data-Integrity-Media-Guidelines",
+      "more_source_urls": [
+        "https://support.doorifymls.com/hc/en-us/articles/360058227993-What-are-the-Photo-Requirements-for-a-listing",
+        "https://support.doorifymls.com/hc/en-us/articles/32402136977427-Rules-Regulations",
+        "https://support.doorifymls.com/hc/en-us/articles/52086884996243-Rules-and-Regulations-Appendix-A-Data-Integrity-Guidelines"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "BeachesMLS",
+      "region": "Southeast Florida",
+      "rules_cited": "Sections 3.2.2 and 3.2.2a (rules updated Apr. 16, 2026)",
+      "photo_limit": null,
+      "photo_requirements": "At least one front exterior photo (home or building entrance) on Active and Off Market listings, unless the seller directs otherwise in writing. For pre-construction and under-construction homes the first photo is the model or an artist rendering. Count not stated on the pages we read",
+      "min_size": null,
+      "branding_rule": "Only the property and its vicinity: no frames, signs, business cards, watermarks other than the BeachesMLS logo, the agent, text or overlays (except exterior location ID), collages, people or pets except in the background, QR codes or URLs",
+      "virtual_staging_rule": "\"Clearly identified as being virtually staged within the first 180 characters of the public remarks and photo descriptions\"",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required by the 2026 rules",
+      "fines": "Media that breaks rule 3.2.2a: $500 per occurrence (2-business-day grace on a first offense, automatic after). Changing or removing photos against Section 3.1.4: $500. Missing front photo: courtesy notices, then $50 or a compliance class on the 4th notice",
+      "source_url": "https://rworld.com/s/BeachesMLSRulesandRegulations2026.pdf",
+      "more_source_urls": [
+        "https://rworld.com/s/BeachesMLSComplianceGuidelines2026.pdf",
+        "https://rworld.com/compliance-center"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "Southeast Florida MLS",
+      "region": "MIAMI REALTORS, Florida",
+      "rules_cited": "Section 15.1.12 (rules updated Aug. 21, 2025)",
+      "photo_limit": null,
+      "photo_requirements": "At least one photo of the front street view (or another graphic that accurately depicts the property) for RE1, RE2, RIN and RNT listings in every status, unless the owner directs otherwise in writing; photos taken under the listing broker's direction. Count not stated on the pages we read",
+      "min_size": null,
+      "branding_rule": "Photos \"containing watermarks, logos, text, or other brands cannot be entered into the SEFMLS under any circumstances\"; the fine schedule adds embedded links, graphics and QR codes, in photos, virtual tours and videos",
+      "virtual_staging_rule": "Not addressed on the pages we read. Section 24.20 bars manipulating listing content \"in any way that produces a deceptive or misleading result\"",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required on the pages we read",
+      "fines": "$500, then $750, then $1,500 for a missing photo, unauthorized reuse of photos, or \"inappropriate, inaccurate, or branded\" photos, virtual tours and videos",
+      "source_url": "https://www.miamirealtors.com/wp-content/uploads/bsk-pdf-manager/2019/12/MLS-RR-and-Fines.pdf",
+      "more_source_urls": [
+        "https://www.miamirealtors.com/wp-content/uploads/bsk-pdf-manager/2021/07/MLS-Fines.pdf",
+        "https://www.miamirealtors.com/mls/"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "OneKey MLS",
+      "region": "New York",
+      "rules_cited": "Sections 307 and 309 (Rules and Procedures, Version 2026C)",
+      "photo_limit": 36,
+      "photo_requirements": "Up to 36 photos, 10 MB each, each newly uploaded photo captioned. At least one front exterior photo within 24 hours of entry, in every status; once closed, the primary photo must be the front exterior. Photos can't be deleted once a listing leaves Active (Coming Soon and Temporarily Off the Market excepted)",
+      "min_size": "1024 × 768 px or larger, recommended",
+      "branding_rule": "Images must \"accurately reflect only\" the listed property, with no contact or identifying information: no agent names, phone numbers, emails, brokerage logos or website links. Photos may not be manipulated to obscure the MLS logo or copyright notice",
+      "virtual_staging_rule": "Not addressed on the pages we read. Only \"To Be Built\" listings must state that the photos \"are computer-generated images and not actual photographs\"",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required on the pages we read",
+      "fines": "Inaccurate image: $100 (Class 2), and staff may delete it. Missing front photo: $50 (Class 1), doubling after 2 days, tripling after 4 and five times after 5 days uncorrected",
+      "source_url": "https://support.onekeymls.com/hc/article_attachments/49417630758548",
+      "more_source_urls": [
+        "https://support.onekeymls.com/hc/en-us/articles/43193138309140-Accurate-Images-and-Attachments-Violation",
+        "https://support.onekeymls.com/hc/en-us/articles/43263101370388-Photograph-Required-for-All-Listings",
+        "https://support.onekeymls.com/hc/en-us/articles/26920063924372-Adding-and-Editing-Photos-Captions-and-Descriptions-on-Listings-in-Matrix",
+        "https://support.onekeymls.com/hc/en-us/articles/43266003075988-Accurate-Listing-Media-and-Information-Violation"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "mls": "MLS PIN",
+      "region": "New England",
+      "rules_cited": "Section 1.0(f) and Attachment D (rules amended through March 25, 2026)",
+      "photo_limit": 42,
+      "photo_requirements": "Up to 42 photos. At least one image, including one of the exterior of the structure, within 5 business days of entry (Coming Soon: within 5 business days after the period ends), unless the seller signs a request not to",
+      "min_size": null,
+      "branding_rule": "Images must be \"limited to objective information\" about the property's physical attributes or location; nothing that promotes the listing broker, its agents, its franchisor, its open houses or \"the branding or any existing brand\"",
+      "virtual_staging_rule": "Not addressed on the pages we read",
+      "ai_alteration_rule": null,
+      "originals_rule": "Not required on the pages we read",
+      "fines": "$25 if no photo by the deadline, plus $25 for each further 5 business days. The 2020 photo policy adds removal and \"fines of up to $500 per violation and/or suspension of service\" for prohibited content",
+      "source_url": "https://irp.cdn-website.com/501682b6/files/uploaded/RULES+AND+REGS+Thru+3-25-26+FORMATTED-+USE+THIS+Doc4.71-CLEAN.pdf",
+      "more_source_urls": [
+        "https://irp.cdn-website.com/501682b6/files/uploaded/Non-Editable-Photo-Submission-Policy.pdf",
+        "https://www.mlspin.com/resources/wicked-smart-questions",
+        "https://www.mlspin.com/resources/rules-regulations"
       ],
       "checked": "2026-10-22"
     }

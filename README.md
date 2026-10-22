@@ -4,7 +4,7 @@ Open data about real estate listing photos, published by [October](https://www.o
 
 | Dataset | Files | Rows | What it holds |
 |---|---|---|---|
-| **MLS photo rules by MLS** | [`mls-photo-rules.csv`](data/mls-photo-rules.csv) · [`mls-photo-rules.json`](data/mls-photo-rules.json) | 8 MLSs | Photo limits, required shots, branding bans, virtual-staging labels, AI rules, original-photo requirements and fines at CRMLS, SDMLS, Bright MLS, Stellar MLS, NWMLS, Metro MLS, MLS Now and Unlock MLS. Every row is read from the MLS's own published rules, FAQ or support page, with the source URL and the date it was checked. |
+| **MLS photo rules by MLS** | [`mls-photo-rules.csv`](data/mls-photo-rules.csv) · [`mls-photo-rules.json`](data/mls-photo-rules.json) | 22 MLSs | Photo limits, required shots, branding bans, virtual-staging labels, AI rules, original-photo requirements and fines at CRMLS, SDMLS, Bright MLS, Stellar MLS, NWMLS, Metro MLS, MLS Now, Unlock MLS, ARMLS, MLSListings, SFARMLS, RMLS, REcolorado, HAR MLS, MRED, NorthstarMLS, Canopy MLS, Doorify MLS, BeachesMLS, Southeast Florida MLS, OneKey MLS and MLS PIN. Every row is read from the MLS's own published rules, FAQ or support page, with the source URL and the date it was checked. |
 | **Professional listing photo benchmarks** | [`listing-photo-benchmarks.json`](data/listing-photo-benchmarks.json) | 26 figures | What professional interior listing photos measure: lean of vertical lines (median 0.00° across 392 photos), focal length (median 18 mm full-frame equivalent), the brightness profile (L* percentiles), near-white share, wall colour, saturation, fine detail, styling faults and delivered size. Each figure has its sample size and method. |
 
 Read them as pages:
