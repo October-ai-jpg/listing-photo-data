@@ -1,18 +1,22 @@
 {
   "name": "Listing photo apps and services compared",
-  "description": "53 real estate photo tools in one table: capture apps, AI editors, human editing services, virtual staging, 3D tour and video tools, with who does the work, platforms, price basis, lowest published US-dollar price, the price in the vendor's words, turnaround, video, staging, whether altered photos are labelled, the source URL and the date each row was checked.",
+  "description": "58 real estate photo tools in one table: capture apps, AI editors, human editing services, virtual staging, 3D tour and video tools, with who does the work, platforms, price basis, lowest published US-dollar price, the price in the vendor's words, turnaround, video, staging, whether altered photos are labelled, the source URL and the date each row was checked.",
   "url": "https://www.october-ai.com/data",
   "source_page": "https://www.october-ai.com/guides/real-estate-photo-apps-compared",
   "creator": "October (october-ai.com)",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
   "attribution": "Source: October, october-ai.com/data",
-  "date_modified": "2026-10-22",
+  "date_modified": "2026-10-27",
   "spatial_coverage": "United States",
   "changelog": [
     {
       "date": "2026-10-22",
       "change": "First release: 53 tools, each row copied from one of our guides, which read it from the vendor's own pages between 20 and 22 October 2026."
+    },
+    {
+      "date": "2026-10-27",
+      "change": "Added 5 capture apps: ListKit, Listing Candy (formerly LensCasa), Listing Camera, ListingPix and PropLens, each read from its US App Store listing and its own site on 27 October 2026."
     }
   ],
   "fields": [
@@ -147,6 +151,74 @@
       "guide_slug": "real-estate-camera-app"
     },
     {
+      "name": "Listing Camera - Real Estate",
+      "url": "https://listing-camera.com/",
+      "category": "capture app",
+      "who_does_the_work": "you + app",
+      "platforms": "iPhone and iPad (iOS 18+); Android 'coming soon'",
+      "price_basis": "per month",
+      "price_from_usd": 19.99,
+      "price_text": "5 free enhancements; Pro $19.99/month or $179.99/year for 50 credits a month that roll over; 25 more for $7.99",
+      "turnaround": "30-40 seconds a photo, its site says",
+      "makes_video": false,
+      "virtual_staging": false,
+      "labels_altered_photos": null,
+      "source_url": "https://listing-camera.com/",
+      "checked": "2026-10-27",
+      "guide_slug": "best-real-estate-photography-apps"
+    },
+    {
+      "name": "Listing Candy (formerly LensCasa)",
+      "url": "https://listingcandy.com/",
+      "category": "capture app",
+      "who_does_the_work": "you + app",
+      "platforms": "iOS 26+",
+      "price_basis": "per listing",
+      "price_from_usd": 39,
+      "price_text": "$99 a listing with no subscription; plans bring it down to as little as $39 a listing, its site says",
+      "turnaround": "'Full photo edits are delivered in under 30 minutes'",
+      "makes_video": true,
+      "virtual_staging": true,
+      "labels_altered_photos": null,
+      "source_url": "https://listingcandy.com/",
+      "checked": "2026-10-27",
+      "guide_slug": "best-real-estate-photography-apps"
+    },
+    {
+      "name": "ListingPix: Real Estate Camera",
+      "url": "https://listingpix.com/",
+      "category": "capture app",
+      "who_does_the_work": "you + app",
+      "platforms": "iOS 16+",
+      "price_basis": "credit pack",
+      "price_from_usd": 5,
+      "price_text": "Credit packs in the US App Store: 5 for $5.00, 25 for $20.00, 100 for $60.00, 500 for $200.00; staging from $3 an image, its site says",
+      "turnaround": "instantly, its site says",
+      "makes_video": null,
+      "virtual_staging": true,
+      "labels_altered_photos": null,
+      "source_url": "https://apps.apple.com/us/app/listingpix-real-estate-camera/id6475031981",
+      "checked": "2026-10-27",
+      "guide_slug": "best-real-estate-photography-apps"
+    },
+    {
+      "name": "ListKit: Real Estate Photos",
+      "url": "https://listkit.app/",
+      "category": "capture app",
+      "who_does_the_work": "human editor",
+      "platforms": "iOS 17+",
+      "price_basis": "per listing",
+      "price_from_usd": 41.67,
+      "price_text": "1 free listing credit; $44.99/month for 1 listing credit or $499.99/year for 12 ($41.67 each) on its site; $49.99/month or $569.99/year in the US App Store",
+      "turnaround": "'Most edited photos are returned within 24 hours'",
+      "makes_video": true,
+      "virtual_staging": true,
+      "labels_altered_photos": null,
+      "source_url": "https://listkit.app/",
+      "checked": "2026-10-27",
+      "guide_slug": "best-real-estate-photography-apps"
+    },
+    {
       "name": "Nodalview",
       "url": "https://www.nodalview.com",
       "category": "capture app",
@@ -212,6 +284,23 @@
       "labels_altered_photos": null,
       "source_url": "https://apps.apple.com/us/app/propershot/id1608365779",
       "checked": "2026-10-20",
+      "guide_slug": "best-real-estate-photography-apps"
+    },
+    {
+      "name": "PropLens: AI Property Camera",
+      "url": "https://www.virtualstaging.art/mobile-app",
+      "category": "capture app",
+      "who_does_the_work": "you + app",
+      "platforms": "iOS 15.1+; also Android",
+      "price_basis": "not published",
+      "price_from_usd": null,
+      "price_text": "Free to shoot; AI edits and staging use credits, trial credits included; no in-app prices in the US App Store",
+      "turnaround": null,
+      "makes_video": true,
+      "virtual_staging": true,
+      "labels_altered_photos": true,
+      "source_url": "https://www.virtualstaging.art/mobile-app",
+      "checked": "2026-10-27",
       "guide_slug": "best-real-estate-photography-apps"
     },
     {
