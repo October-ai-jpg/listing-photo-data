@@ -42,4 +42,4 @@ These files are exported from the same records that render the pages on october-
 
 ---
 
-October turns a guided iPhone walk into professional listing photos and a walkthrough video, the same day. See <https://www.october-ai.com>.
+October turns a guided iPhone walk into listing photos and a walkthrough video, made by AI from that capture and usually ready within a few hours. See <https://www.october-ai.com>.
