@@ -1,0 +1,269 @@
+{
+  "name": "Listing photo requirements by platform",
+  "description": "Photo requirements of 11 listing platforms (Airbnb, Vrbo, Booking.com, Expedia Group, Zillow Rentals, Apartments.com, Redfin Rental Tools, Furnished Finder, Google Business Profile, Tripadvisor and Peerspace): minimum and recommended size, file formats, file size cap, photo count, orientation, content rules and the cover photo, each row read from the platform's own help, partner or developer pages on 17 November 2026, with the source URLs and notes where official pages disagree.",
+  "url": "https://www.october-ai.com/data",
+  "source_page": "https://www.october-ai.com/guides/listing-photo-requirements-by-platform",
+  "creator": "October (october-ai.com)",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Source: October, october-ai.com/data",
+  "date_modified": "2026-11-17",
+  "spatial_coverage": "United States",
+  "changelog": [
+    {
+      "date": "2026-11-17",
+      "change": "First release: 11 platforms, each read from the platform's own pages on 17 November 2026. Realtor.com, Homes.com and Facebook Marketplace left out: no official photo spec could be read."
+    }
+  ],
+  "fields": [
+    {
+      "name": "platform",
+      "description": "The platform, as it names itself."
+    },
+    {
+      "name": "category",
+      "description": "vacation rental, hotel, rental, local business or venue."
+    },
+    {
+      "name": "min_resolution",
+      "description": "The smallest photo the platform accepts, as stated."
+    },
+    {
+      "name": "recommended_resolution",
+      "description": "The size the platform recommends, as stated."
+    },
+    {
+      "name": "max_file_size",
+      "description": "The largest file the platform accepts, as stated."
+    },
+    {
+      "name": "file_formats",
+      "description": "The file types the platform lists."
+    },
+    {
+      "name": "min_photos",
+      "description": "The fewest photos a listing needs, where stated."
+    },
+    {
+      "name": "max_photos",
+      "description": "The most photos a listing can show, where stated."
+    },
+    {
+      "name": "orientation_or_aspect",
+      "description": "What the platform says about landscape, portrait or aspect ratio."
+    },
+    {
+      "name": "content_rules",
+      "description": "A short summary of what the platform bans or rejects (watermarks, logos, text, collages, people, AI or heavy edits)."
+    },
+    {
+      "name": "cover_photo_rule",
+      "description": "What the platform says about the first or cover photo."
+    },
+    {
+      "name": "source_url",
+      "description": "The platform's own page the row is mainly read from."
+    },
+    {
+      "name": "more_source_urls",
+      "description": "Other pages of the platform's own that the row uses, separated by semicolons."
+    },
+    {
+      "name": "checked",
+      "description": "The day the pages were read (YYYY-MM-DD)."
+    },
+    {
+      "name": "notes",
+      "description": "Anything that limits comparability: scope, conflicting official pages, what could not be read."
+    }
+  ],
+  "rows": [
+    {
+      "platform": "Airbnb",
+      "category": "vacation rental",
+      "min_resolution": "1024 × 683 px",
+      "recommended_resolution": "at least 1200 × 800 px (Resource Center); 'bigger is better' (Help Center)",
+      "max_file_size": null,
+      "file_formats": null,
+      "min_photos": 5,
+      "max_photos": null,
+      "orientation_or_aspect": "landscape/horizontal; Airbnb auto-crops photos to squares in search results and on the listing",
+      "content_rules": "Content Policy covers photos incl. AI-generated or AI-edited content; bans superimposed logos/links/company names advertising another business, content that identifies the listing's location, IP/privacy violations, explicit or violent content.",
+      "cover_photo_rule": "First photo is the large one shown in search; first five photos appear prominently; host picks cover via 'Make cover photo'.",
+      "source_url": "https://www.airbnb.com/help/article/746",
+      "more_source_urls": "https://www.airbnb.com/help/article/477; https://www.airbnb.com/resources/hosting-homes/a/how-to-take-great-photos-for-your-listing-687; https://www.airbnb.com/resources/hosting-homes/a/how-to-add-the-best-photos-of-your-space-367; https://www.airbnb.com/help/article/546",
+      "checked": "2026-11-17",
+      "notes": "Stays (homes) only. Minimum count (5) comes from a Resource Center article, not a Help Center rule. 1200 × 800 and 'up to about 10 MB' are recommendations in the Resource Center; no hard file-size limit or format list stated. Airbnb Experiences use different rules (help/article/3024: vertical, ≥800 × 1,200 px, ≤10 MB, ≥5 photos)."
+    },
+    {
+      "platform": "Vrbo",
+      "category": "vacation rental",
+      "min_resolution": "1024 × 683 px",
+      "recommended_resolution": "3840 × 2160 px or higher",
+      "max_file_size": null,
+      "file_formats": "JPEG, PNG, WebP, AVIF, SVG",
+      "min_photos": 6,
+      "max_photos": null,
+      "orientation_or_aspect": "horizontal recommended; vertical accepted",
+      "content_rules": "May reject: text overlays (URLs, contact info), graphic overlays (logo watermarks, borders), collages/montages, black-and-white or sepia, blank/duplicate/near-duplicate, blurry/pixelated (avoid Portrait Mode), close-ups, non-photos (documents, illustrations; floor plans OK, area maps not).",
+      "cover_photo_rule": "First photo is what travelers see in search results; Vrbo's AI Automatic Photo Order may choose a different hero image unless turned off.",
+      "source_url": "https://help.vrbo.com/articles/Vrbo-photo-guidelines",
+      "more_source_urls": null,
+      "checked": "2026-11-17",
+      "notes": "Fewer than 6 photos for more than 30 days can lead to indefinite suspension. Multi-unit properties need at least 1 exterior, 1 interior/lobby, 3 guest room and 1 bathroom photo. Duplicates don't count. No file-size limit stated on the English page read."
+    },
+    {
+      "platform": "Booking.com",
+      "category": "hotel",
+      "min_resolution": "2048 × 1080 px (photography requirements); 300 × 300 px (upload/display floor)",
+      "recommended_resolution": "4000 × 3000 px preferred (requirements page); ideally 2048 × 1536 px (upload article)",
+      "max_file_size": "1.3 MB (Extranet upload article); 50 MB (Connectivity Photo API)",
+      "file_formats": "JPEG, BMP (Extranet upload article); JPEG, PNG (Photo API)",
+      "min_photos": 10,
+      "max_photos": "299 (Photo API, per property)",
+      "orientation_or_aspect": "landscape (horizontal) only; 360° photos 2:1 and at least 1280 × 900 px",
+      "content_rules": "Avoid grainy/blurry, over-processed, heavy filters/HDR, collages, watermarks or illustrations, skewed/distorted, black-and-white, fisheye. Avoid images focused on contact info or where people are the main focus. Personal ID data (IDs, bills, contracts) not allowed.",
+      "cover_photo_rule": "Partner sets a 'preferred main photo' in Extranet; via API the first uploaded photo becomes main by default; main photo can only be deleted when the property is closed.",
+      "source_url": "https://partner.booking.com/en-us/help/property-page/photos-extranet/understanding-photo-requirements-your-property",
+      "more_source_urls": "https://partner.booking.com/en-us/help/property-page/how-do-i-add-change-and-update-my-property-photos; https://developers.booking.com/connectivity/docs/photo-api/managing-photos; https://developers.booking.com/connectivity/docs/tutorial-property-onboarding/step-11",
+      "checked": "2026-11-17",
+      "notes": "Official pages conflict: Extranet upload article says JPEG/BMP, ≤1.3 MB, ideally 2048 × 1536; Photo API says JPEG/PNG, ≤50 MB, max 14000 × 14000 px. Also asks ≥4 photos per room/unit + ≥1 bathroom; condo hotels ≥24. Covers all Booking.com property types (hotels and vacation rentals)."
+    },
+    {
+      "platform": "Expedia Group (Expedia, Hotels.com)",
+      "category": "hotel",
+      "min_resolution": null,
+      "recommended_resolution": "2,880 px or more on the longest side",
+      "max_file_size": "15 MB",
+      "file_formats": "JPG, PNG, BMP",
+      "min_photos": null,
+      "max_photos": null,
+      "orientation_or_aspect": null,
+      "content_rules": "May be rejected for text/graphic overlays, borders, inappropriate material, close-ups, logos/maps/floor plans/illustrations, collages, B&W or sepia, blurry/pixelated. Policy bans contact/personal data, door codes, exact rental addresses; covers AI-generated content.",
+      "cover_photo_rule": null,
+      "source_url": "https://connectivityportal.expediagroup.com/documentation/expedia/property_mgmt_apis/image/concepts/",
+      "more_source_urls": "https://connectivityportal.expediagroup.com/documentation/expedia/property_mgmt_apis/image/requirements-best-practices/; https://www.expediagroup.com/en-us/marketplace-policies/partner-provided-content-policy",
+      "checked": "2026-11-17",
+      "notes": "Specs are from Expedia Group's connectivity (Image/Property API) docs, not a Partner Central help article (Partner Central help is login/JS-gated). Images below an unstated minimum resolution are REJECTED. Recommends ≥4 photos per room type + 1 bathroom, 1 exterior, 1 entrance/lobby, 1 per key amenity. A 'propertyFeatured' flag exists in the API but no rule text."
+    },
+    {
+      "platform": "Zillow Rentals",
+      "category": "rental",
+      "min_resolution": "330 × 220 px",
+      "recommended_resolution": null,
+      "max_file_size": null,
+      "file_formats": "'consistent with generally accepted industry standards' (no list)",
+      "min_photos": null,
+      "max_photos": null,
+      "orientation_or_aspect": null,
+      "content_rules": "Photos must be clear and accurate, of the property's interior/exterior; 2D/3D floor plan renderings allowed. Prohibits third-party intellectual property or contact information in photos (names, numbers, addresses, logos).",
+      "cover_photo_rule": null,
+      "source_url": "https://www.zillow.com/rentals-network/listings-quality-policy/",
+      "more_source_urls": null,
+      "checked": "2026-11-17",
+      "notes": "Applies to Zillow Rentals (Rental Manager / rentals network) only. Max dimensions 9459 × 9459 px. Zillow help-center articles (zillow.zendesk.com, zillow.com/z/info/photo-uploading-tips) were blocked (403 / bot challenge) so file size, formats and recommended size could not be verified. For-sale agent listing photos come via MLS feeds; no Zillow spec read."
+    },
+    {
+      "platform": "Apartments.com (CoStar)",
+      "category": "rental",
+      "min_resolution": "2,048 px on longest side (smaller 'may be rejected')",
+      "recommended_resolution": "at least 2,048 px on the longest side",
+      "max_file_size": "75 MB",
+      "file_formats": "JPG/JPEG, PNG (GIF also listed in one help article)",
+      "min_photos": null,
+      "max_photos": "Displayed photos depend on ad package: Basic 5, Silver 20, Silver Plus 25, Gold 35, Gold Plus 40, Platinum 50, Platinum Plus 55, Diamond/Diamond Plus unlimited; uploads unlimited",
+      "orientation_or_aspect": "horizontal/landscape; vertical may be cut off top and bottom",
+      "content_rules": "Color only (B&W rejected), minimal filtering; no blurry/distorted images or special effects/animation; no superimposed text, graphics or logos; images showing phone, email or URL are deleted; must own the images; captions required.",
+      "cover_photo_rule": null,
+      "source_url": "https://propertyhelp.apartments.com/article/560-what-are-the-photo-guideline-for-apartments-com",
+      "more_source_urls": "https://propertyhelp.apartments.com/article/266-what-is-the-photo-size-or-type-you-accept-on-apartments-com; https://www.apartments.com/grow/about/terms-and-conditions-for-submitting-photos; https://propertyhelp.apartments.com/article/916-how-do-i-upload-and-arrange-photos",
+      "checked": "2026-11-17",
+      "notes": "Format conflict: article 266 lists JPG/JPEG, GIF, PNG; guideline article 560 and photo T&C say JPG or PNG only (560 discourages GIF animation). Package photo limits are from the multi-family upload article. Pages blocked to plain HTTP clients; read in a browser."
+    },
+    {
+      "platform": "Redfin (Rental Tools)",
+      "category": "rental",
+      "min_resolution": null,
+      "recommended_resolution": null,
+      "max_file_size": null,
+      "file_formats": null,
+      "min_photos": 5,
+      "max_photos": null,
+      "orientation_or_aspect": null,
+      "content_rules": "Owner-uploaded photos: no sexual, violent or medical content; no advertisements (incl. rental ads, FSBO); no photos showing only people; no children 13 or younger; no large group photos. Screened by Google safe-image software.",
+      "cover_photo_rule": "MLS listings: first MLS photo is always shown (hero shot); no rule for Rental Tools listings.",
+      "source_url": "https://support.redfin.com/hc/en-us/articles/25906255408923-Redfin-Rental-Tools-FAQ",
+      "more_source_urls": "https://support.redfin.com/hc/en-us/articles/45556093357595-Photos-FAQ",
+      "checked": "2026-11-17",
+      "notes": "Min 5 photos applies to Redfin Rental Tools listings. Content rules and a 20-image limit are stated for owner-uploaded home photos (My Homes), not explicitly for rental listings, so max_photos left empty. Redfin states no pixel/format/size specs. For-sale photos come from MLS."
+    },
+    {
+      "platform": "Furnished Finder",
+      "category": "rental",
+      "min_resolution": null,
+      "recommended_resolution": "at least 1024 × 683 px",
+      "max_file_size": "less than 20 MB per photo",
+      "file_formats": "PNG, JPG, JPEG",
+      "min_photos": 2,
+      "max_photos": 30,
+      "orientation_or_aspect": null,
+      "content_rules": "Must match listing details, be clear and well-lit, show only areas the traveler can access, reflect current condition. Misleading, outdated or heavily edited images may be removed. Advises avoiding people/pets and not revealing the exact address.",
+      "cover_photo_rule": "Landlord stars a 'featured photo', which appears first; best practice is to start with a clear exterior photo.",
+      "source_url": "https://support.furnishedfinder.com/hc/en-us/articles/38824278047771-How-to-Add-or-Upload-Photos-to-Your-Listing",
+      "more_source_urls": "https://support.furnishedfinder.com/hc/en-us/articles/46997472091163-Photo-Media-Requirements-for-Listings-and-Profiles; https://support.furnishedfinder.com/hc/en-us/articles/41355315965339-Editing-Your-Photos",
+      "checked": "2026-11-17",
+      "notes": "Uploads in batches of up to 10. Video upload not supported. Mid-term (monthly) furnished rentals. Read in a browser (403 to plain HTTP clients)."
+    },
+    {
+      "platform": "Google Business Profile",
+      "category": "local business",
+      "min_resolution": "250 × 250 px",
+      "recommended_resolution": "720 × 720 px",
+      "max_file_size": "5 MB (min 10 KB)",
+      "file_formats": "JPG, PNG",
+      "min_photos": null,
+      "max_photos": null,
+      "orientation_or_aspect": null,
+      "content_rules": "In focus and well lit; no significant alterations or excessive filters or AI; image should represent reality. Must follow GBP photos/videos content policy (prohibited and restricted content).",
+      "cover_photo_rule": "Owner can set a cover photo, but it may not show first; a low-quality cover may be replaced by a user-submitted photo.",
+      "source_url": "https://support.google.com/business/answer/6103862?hl=en",
+      "more_source_urls": "https://support.google.com/business/answer/6123536?hl=en; https://support.google.com/business/answer/10693375?hl=en",
+      "checked": "2026-11-17",
+      "notes": "'AI' wording is on answer/6123536; answer/6103862 says alterations/filters only. Photos show only after verification; may take 24–48 h. Applies to hotels/rentals/venues with a Business Profile too."
+    },
+    {
+      "platform": "Tripadvisor",
+      "category": "hotel",
+      "min_resolution": "1060 × 450 px (Favorite Photos, Cover Photos, Storyboard)",
+      "recommended_resolution": null,
+      "max_file_size": "15 MB for accommodations/partners (10 MB otherwise)",
+      "file_formats": "GIF, JPG, BMP, PNG (Business Advantage photos: JPG, PNG, GIF)",
+      "min_photos": null,
+      "max_photos": null,
+      "orientation_or_aspect": "landscape generally looks better; recommended aspect ratio between 1:1 and 4:3",
+      "content_rules": "No logos, promotional or commercial material on a property's listing; no images from other sources/infringing; not blurry, dark, sideways; not altered in a way that distorts the scene; must relate to the listed property.",
+      "cover_photo_rule": "Cover Photos (Business Advantage subscribers) let owners pick the photos guests see first; Favorite Photos: pick 5–30 images, landscape recommended.",
+      "source_url": "https://www.tripadvisor.com/Trust-lpO1gcsIEejY.html",
+      "more_source_urls": "https://www.tripadvisor.com/business/insights/hotels/resources/telling-your-accommodations-story-through-photos",
+      "checked": "2026-11-17",
+      "notes": "Media Guidelines apply to all uploaders (travelers and owners). 1060 × 450 minimum and Cover/Favorite Photos apply to paid Business Advantage tools only. Read in a browser (403 to plain HTTP clients)."
+    },
+    {
+      "platform": "Peerspace",
+      "category": "venue",
+      "min_resolution": null,
+      "recommended_resolution": null,
+      "max_file_size": null,
+      "file_formats": "JPG, PNG, HEIC/HEIF",
+      "min_photos": 10,
+      "max_photos": 100,
+      "orientation_or_aspect": "vertical images not allowed (listing-approval article)",
+      "content_rules": "High-res, well lit, undistorted photos of the space itself; no screenshots or low-res images; no watermark of any kind; no business names or logos; AI-generated content not allowed on listings.",
+      "cover_photo_rule": "Tip: use the cover photo to show the activity type (Meeting, Event, Production); first five media items should be photos (videos/tours can't be in the first five).",
+      "source_url": "https://support.peerspace.com/en/articles/10119356-photo-tips-and-requirements-for-listings",
+      "more_source_urls": "https://support.peerspace.com/en/articles/16634568-what-are-the-requirements-and-steps-for-getting-a-listing-approved-on-peerspace",
+      "checked": "2026-11-17",
+      "notes": "Photo article updated 15 June 2026. Recommends 20+ photos. Videos only as YouTube/Vimeo/Matterport links. No pixel or file-size spec stated."
+    }
+  ]
+}

@@ -1,13 +1,37 @@
 {
-  "title": "Listing photo data: US real estate photography prices, MLS photo rules and listing photo tools",
+  "title": "Listing photo data: US real estate photography prices, MLS photo rules, listing platform photo requirements and listing photo tools",
   "upload_type": "dataset",
-  "description": "<p>Open data about real estate listing photos, published by October (<a href=\"https://www.october-ai.com/data\">october-ai.com/data</a>).</p><ul><li><strong>Real estate photography prices</strong>: published prices of 154 US real estate photographers and photo companies in 24 metros, by home size, with drone, video, twilight and 3D tour add-ons. Each row links to the business's own pricing page and the date it was read (3 November 2026).</li><li><strong>MLS photo rules</strong>: photo limits, required shots, branding bans, virtual-staging labels, AI rules and fines at 22 US MLSs, each from the MLS's own published rules.</li><li><strong>Listing photo apps and services</strong>: 58 capture apps, AI editors, editing services, virtual staging, 3D tour and video tools, with price basis, lowest published price and turnaround, each from the vendor's own pages.</li><li><strong>Professional listing photo benchmarks</strong>: 26 measured figures (vertical lean, focal length, brightness profile, saturation, detail) with sample size and method.</li></ul><p>CSV and JSON. Each JSON file carries its own field list, licence and changelog. Cite as: Source: October, october-ai.com/data.</p>",
-  "creators": [{"name": "October"}],
+  "description": "<p>Open data about real estate listing photos, published by October (<a href=\"https://www.october-ai.com/data\">october-ai.com/data</a>).</p><ul><li><strong>Real estate photography prices</strong>: published prices of 154 US real estate photographers and photo companies in 24 metros, by home size, with drone, video, twilight and 3D tour add-ons. Each row links to the business's own pricing page and the date it was read (3 November 2026).</li><li><strong>MLS photo rules</strong>: photo limits, required shots, branding bans, virtual-staging labels, AI rules and fines at 22 US MLSs, each from the MLS's own published rules.</li><li><strong>Listing photo requirements by platform</strong>: minimum and recommended size, formats, file size cap, photo count, orientation, content and cover photo rules at 11 platforms (Airbnb, Vrbo, Booking.com, Expedia Group, Zillow Rentals, Apartments.com, Redfin Rental Tools, Furnished Finder, Google Business Profile, Tripadvisor, Peerspace), each from the platform's own pages (17 November 2026).</li><li><strong>Listing photo apps and services</strong>: 58 capture apps, AI editors, editing services, virtual staging, 3D tour and video tools, with price basis, lowest published price and turnaround, each from the vendor's own pages.</li><li><strong>Professional listing photo benchmarks</strong>: 26 measured figures (vertical lean, focal length, brightness profile, saturation, detail) with sample size and method.</li></ul><p>CSV and JSON. Each JSON file carries its own field list, licence and changelog. Cite as: Source: October, october-ai.com/data.</p>",
+  "creators": [
+    {
+      "name": "October"
+    }
+  ],
   "license": "cc-by-4.0",
   "access_right": "open",
-  "keywords": ["real estate", "listing photos", "real estate photography", "photography prices", "MLS", "multiple listing service", "virtual staging", "open data"],
+  "keywords": [
+    "real estate",
+    "listing photos",
+    "real estate photography",
+    "photography prices",
+    "MLS",
+    "multiple listing service",
+    "virtual staging",
+    "open data",
+    "Airbnb photo requirements",
+    "Vrbo",
+    "Booking.com"
+  ],
   "related_identifiers": [
-    {"identifier": "https://www.october-ai.com/data", "relation": "isDocumentedBy", "resource_type": "other"},
-    {"identifier": "https://www.kaggle.com/datasets/octoberai/us-real-estate-listing-photo-data", "relation": "isIdenticalTo", "resource_type": "dataset"}
+    {
+      "identifier": "https://www.october-ai.com/data",
+      "relation": "isDocumentedBy",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://www.kaggle.com/datasets/octoberai/us-real-estate-listing-photo-data",
+      "relation": "isIdenticalTo",
+      "resource_type": "dataset"
+    }
   ]
 }
