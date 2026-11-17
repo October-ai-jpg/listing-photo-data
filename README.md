@@ -17,6 +17,7 @@ Read them as pages:
 - Listing photo tools compared: <https://www.october-ai.com/guides/real-estate-photo-apps-compared>
 - The study behind the benchmarks: <https://www.october-ai.com/guides/what-makes-listing-photos-look-professional>
 - All open data, with changelog: <https://www.october-ai.com/data>
+- Analysis notebook (package prices by home size, add-ons, metros): [`notebooks/real-estate-photography-prices-2026.ipynb`](notebooks/real-estate-photography-prices-2026.ipynb)
 - Mirror on Kaggle: <https://www.kaggle.com/datasets/octoberai/us-real-estate-listing-photo-data>
 
 ## Fields
