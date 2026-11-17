@@ -1,6 +1,6 @@
 # Listing photo data
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24324407.svg)](https://doi.org/10.5281/zenodo.24324407)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24324406.svg)](https://doi.org/10.5281/zenodo.24324406)
 
 Open data about real estate listing photos, published by [October](https://www.october-ai.com) under [CC BY 4.0](LICENSE).
 
@@ -40,7 +40,7 @@ Each JSON file carries its own field list (`fields`), licence, attribution line,
 
 > Source: October, october-ai.com/data
 
-With a DOI: October (2026). *Listing photo data: US real estate photography prices, MLS photo rules and listing photo tools* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24324407
+With a DOI: October (2026). *Listing photo data: US real estate photography prices, MLS photo rules and listing photo tools* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24324406
 
 For example: *"Across 392 professional interior listing photos, the median lean of vertical lines was 0.00° (October, october-ai.com/data)."*
 
