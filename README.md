@@ -33,6 +33,7 @@ Read them as pages:
 - All open data, with changelog: <https://www.october-ai.com/data>
 - Analysis notebook (package prices by home size, add-ons, metros): [`notebooks/real-estate-photography-prices-2026.ipynb`](notebooks/real-estate-photography-prices-2026.ipynb)
 - Mirror on Kaggle: <https://www.kaggle.com/datasets/octoberai/us-real-estate-listing-photo-data>
+- Mirror on Hugging Face: <https://huggingface.co/datasets/OctoberAI/us-real-estate-listing-photo-data> · price explorer by metro: <https://huggingface.co/spaces/OctoberAI/real-estate-photography-prices>
 
 ## Fields
 
